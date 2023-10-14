@@ -1,0 +1,12 @@
+Client\RestApp$1.class
+Client\Client.class
+Client\Link.class
+Client\NewJerseyClient$1.class
+Client\Room.class
+model\Room.class
+Client\NewJerseyClient$2.class
+model\Reservations.class
+Client\ObjectFactory.class
+Client\Reservations.class
+Client\NewJerseyClient.class
+Client\RestApp.class

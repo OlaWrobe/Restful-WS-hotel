@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="reservations" type="reservations"/>
+
+  <xs:element name="room" type="room"/>
+
+  <xs:complexType name="room">
+    <xs:sequence>
+      <xs:element name="capacity" type="xs:int"/>
+      <xs:element name="price" type="xs:int"/>
+      <xs:element name="roomNumber" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="reservations">
+    <xs:sequence>
+      <xs:element name="amountOfGuests" type="xs:int"/>
+      <xs:element name="checkInDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="checkOutDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="id" type="xs:int"/>
+      <xs:element name="roomLink" type="link" minOccurs="0"/>
+      <xs:element name="roomNumber" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="link" abstract="true">
+    <xs:sequence/>
+  </xs:complexType>
+</xs:schema>
+
